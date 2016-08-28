@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_medium">
+
+    <TextView
+        android:id="@+id/tv_meals_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fried chicken"
+        android:textSize="@dimen/text_heading_1x"
+        android:textColor="@color/primary_text"
+        />
+
+    <com.zinmon.mealordering.components.DynamicHeightImageView
+        android:id="@+id/iv_meals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sample_food"
+        android:layout_marginTop="@dimen/margin_small"
+        />
+    <TextView
+        android:id="@+id/tv_meals_price_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5000"
+        android:fontFamily="sans-serif-light"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="4"
+        android:ellipsize="end"
+        android:layout_marginTop="@dimen/margin_small"
+        android:textSize="@dimen/text_regular_2x"
+        android:textColor="@color/primary_text"
+        />
+
+</LinearLayout>

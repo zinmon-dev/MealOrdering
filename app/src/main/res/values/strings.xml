@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Meal Ordering</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_detail">Meals Detail</string>
+    <string name="event_stock_photo_shared_transition">event_stock_photo_shared_transition</string>
+    <string name="one_column">one column</string>
+    <string name="two_column">two column</string>
+</resources>
