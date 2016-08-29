@@ -25,8 +25,8 @@ public class MealsViewHolder extends RecyclerView.ViewHolder implements View.OnC
     @BindView(R.id.iv_meals)
     ImageView ivMeals;
 
-    @BindView(R.id.tv_meals_price_detail)
-    TextView tvMealsPrice;
+//    @BindView(R.id.tv_meals_price_detail)
+//    TextView tvMealsPrice;
 
     private ControllerMealsItem mController;
     private MealVO mMeals;
@@ -41,7 +41,7 @@ public class MealsViewHolder extends RecyclerView.ViewHolder implements View.OnC
     public void bindData(MealVO meals) {
         mMeals = meals;
         tvMealsName.setText(meals.getName());
-        tvMealsPrice.setText("Price : "+meals.getPrice());
+        //tvMealsPrice.setText("Price : "+meals.getPrice());
 
         String imageUrl = meals.getImgurl();
         Glide.with(ivMeals.getContext())

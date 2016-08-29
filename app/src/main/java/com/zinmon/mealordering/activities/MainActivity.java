@@ -67,12 +67,6 @@ public class MainActivity extends AppCompatActivity implements MealsViewHolder.C
         int id = item.getItemId();
 
         switch (id) {
-            case R.id.one_column:
-                navigateToImageLoading(direction="one");
-                return true;
-            case R.id.two_column:
-                navigateToImageLoading(direction="two");
-                return true;
             case R.id.action_settings:
                 return true;
         }
@@ -80,11 +74,6 @@ public class MainActivity extends AppCompatActivity implements MealsViewHolder.C
         return super.onOptionsItemSelected(item);
     }
 
-    private void navigateToImageLoading(String direction) {
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fl_container, MainActivityFragment.newInstance(direction))
-                .commit();
-    }
     @Override
     public void onTapAttraction(MealVO meals, ImageView ivMeals) {
         Intent intent = MealsDetailActivity.newIntent(meals.getMealId());
